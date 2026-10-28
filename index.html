@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mój Portfel - Kalkulator Wydatków</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Błąd nr 12 w Issues: Brak poprawnego nagłówka / logo -->
+        <header>
+            <h1>Mój Portfel</h1>
+            <p>Kontroluj swoje wydatki prosto i szybko</p>
+        </header>
+
+        <section class="card summary-card">
+            <h2>Podsumowanie</h2>
+            <div class="summary-grid">
+                <div>
+                    <span>Budżet początkowy:</span>
+                    <strong id="budget-display">1000 zł</strong>
+                </div>
+                <div>
+                    <span>Suma wydatków:</span>
+                    <strong id="total-expenses">0 zł</strong>
+                </div>
+                <div>
+                    <span>Pozostało:</span>
+                    <!-- Błąd nr 9 w Issues: Nieprawidłowe id elementu lub brak aktualizacji -->
+                    <strong id="balance-display" class="positive">1000 zł</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Błąd nr 4 w Issues: Brak atrybutu action lub zabezpieczenia formularza -->
+        <section class="card form-card">
+            <h2>Dodaj wydatek</h2>
+            <form id="expense-form">
+                <div class="form-group">
+                    <label for="expense-name">Nazwa wydatku:</label>
+                    <input type="text" id="expense-name" placeholder="np. Zakupy spożywcze">
+                </div>
+                <div class="form-group">
+                    <label for="expense-amount">Kwota (zł):</label>
+                    <!-- Błąd nr 14 w Issues: Brak ograniczenia min="0" -->
+                    <input type="number" id="expense-amount" placeholder="np. 50">
+                </div>
+                <div class="form-group">
+                    <label for="expense-category">Kategoria:</label>
+                    <select id="expense-category">
+                        <option value="Jedzenie">Jedzenie</option>
+                        <option value="Rachunki">Rachunki</option>
+                        <option value="Rozrywka">Rozrywka</option>
+                        <!-- Brak opcji "Inne" (Issue nr 2) -->
+                    </select>
+                </div>
+                <!-- Błąd nr 13: Brak type="submit" lub niespójny styl przycisku -->
+                <button id="add-btn">Dodaj wydatek</button>
+            </form>
+        </section>
+
+        <section class="card list-card">
+            <h2>Historia wydatków</h2>
+            <!-- Błąd nr 5: Brak licznika elementów lub komunikatu o pustej liście -->
+            <ul id="expense-list">
+                <!-- Przykładowe statyczne elementy lub pusto -->
+            </ul>
+            <!-- Błąd nr 8: Brak przycisku "Wyczyść wszystko" -->
+        </section>
+        
+        <!-- Błąd nr 15: Brak stopki z prawami autorskimi -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
