@@ -64,6 +64,9 @@ h2 {
 }
 
 /* Błąd nr 3 w Issues: Brak stylu dla stanu ujemnego (ujemny balans nie zmienia się na czerwono) */
+.negative {
+    color: #e74c3c;
+}
 
 .form-group {
     margin-bottom: 15px;
