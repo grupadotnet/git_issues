@@ -1,0 +1,112 @@
+/* Błąd nr 1: Nieintuicyjna, słabo czytelna paleta kolorów (żółty tekst na białym tle) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+.summary-grid {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.summary-grid div {
+    flex: 1;
+}
+
+.summary-grid span {
+    display: block;
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.positive {
+    color: #27ae60;
+}
+
+/* Błąd nr 3 w Issues: Brak stylu dla stanu ujemnego (ujemny balans nie zmienia się na czerwono) */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Błąd nr 11: Brak stylów responsywnych dla bardzo małych ekranów (smartfony < 400px) */
