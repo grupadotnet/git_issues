@@ -109,4 +109,8 @@ ul li {
     align-items: center;
 }
 
+footer{
+    text-align: center;
+}
+
 /* Błąd nr 11: Brak stylów responsywnych dla bardzo małych ekranów (smartfony < 400px) */
