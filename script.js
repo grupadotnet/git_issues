@@ -54,6 +54,13 @@ function updateUI() {
     });
 
     // Błąd nr 10 w Issues: Brak aktualizacji koloru balansu (np. zmiana na czerwony, gdy balans spada poniżej 0)
+    if (balance < 0) {
+        balanceDisplay.classList.remove('positive');
+        balanceDisplay.classList.add('negative');
+    } else {
+        balanceDisplay.classList.remove('negative');
+        balanceDisplay.classList.add('positive');
+    }
 }
 
 function removeExpense(id) {
